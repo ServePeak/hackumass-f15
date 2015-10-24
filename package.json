@@ -5,7 +5,10 @@
     "start" : "node app.js"
   },
   "dependencies" : {
+		"mongodb" : "*",
     "express" : "*",
+		"angular" : "*",
+		"bootstrap" : "*",
 		"googleapis" : "*",
 		"google-auth-library" : "*"
   }
