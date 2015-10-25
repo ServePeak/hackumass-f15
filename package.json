@@ -1,15 +1,19 @@
 {
-  "name" : "hackumass_f15",
-  "version" : "0.0.1",
-  "scripts" : {
-    "start" : "node app.js"
+  "name": "hackumass_f15",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "node app.js"
   },
-  "dependencies" : {
-		"mongodb" : "*",
-    "express" : "*",
-		"angular" : "*",
-		"bootstrap" : "*",
-		"googleapis" : "*",
-		"google-auth-library" : "*"
+  "dependencies": {
+    "angular": "*",
+    "body-parser": "^1.14.1",
+    "bootstrap": "*",
+    "e": "0.0.4",
+    "ejs": "^2.3.4",
+    "express": "^4.13.3",
+    "google-auth-library": "*",
+    "googleapis": "*",
+    "mongodb": "*",
+    "mongoose": "^4.2.2"
   }
 }
