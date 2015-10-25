@@ -4,13 +4,6 @@ var router = express.Router();
 var path = __dirname + '/public/';
 var qs = require('./quickstart');
 
-var mongo = require('mongodb'),
-  Server = mongo.Server,
-  Db = mongo.Db;
-
-var server = new Server('localhost', 27017, {auto_reconnect: true});
-var db = new Db('exampleDb', server);
-
 db.open(function(err, db) {
   if(!err) {
     console.log("We are connected");
@@ -29,7 +22,7 @@ router.get("/",function(req,res){
 });
 
 router.get("/test",function(req,res){
-	qs.fs.readfile();
+	res.sendFile(path + "test.html");
 });
 
 router.get("/contact",function(req,res){
